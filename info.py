@@ -65,7 +65,7 @@ PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b>- ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟ�
 OWNER_USERNAME = environ.get('OWNER_USERNAME', 'Arya_bro') # owner username without @
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+-duU_vRUZzswZDY1')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+r29zcNRWS-QzMjZl')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/vs_Files_Mx_player')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/vs_Files_Mx_player/135')
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/vs_Files_Mx_player/135')
