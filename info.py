@@ -127,8 +127,11 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "https://arya-aha-72374c565923.herokuapp.com/")
-
+HAS_SSL=bool(getenv('HAS_SSL',True))
+if HAS_SSL:
+    URL = "https://arya-aha-72374c565923.herokuapp.com/".format(FQDN)
+else:
+    URL = "https://arya-aha-72374c565923.herokuapp.com/".format(FQDN)
 
 # Rename Info ; If True Then Bot Rename File Else Not
 RENAME_MODE = bool(environ.get('RENAME_MODE', True)) # Set True or Flase
