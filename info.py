@@ -125,12 +125,17 @@ SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 if 'DYNO' in environ:
     ON_HEROKU = True
-else:
-    ON_HEROKU = False
-HAS_SSL=bool(getenv('HAS_SSL',True))
-if HAS_SSL:
-    URL = environ.get("URL", "arya-aha-72374c565923.herokuapp.com")
-
+        APP_NAME = str(getenv('APP_NAME'))
+    
+    else:
+        ON_HEROKU = False
+    FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
+    HAS_SSL=bool(getenv('HAS_SSL',False))
+    if HAS_SSL:
+        URL = "https://arya-aha-72374c565923.herokuapp.com/"
+    else:
+        URL = "https://arya-aha-72374c565923.herokuapp.com/"
+        
 # Rename Info ; If True Then Bot Rename File Else Not
 RENAME_MODE = bool(environ.get('RENAME_MODE', True)) # Set True or Flase
 
