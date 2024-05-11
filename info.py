@@ -55,7 +55,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "PIF01")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'PIF01"')
 
 # Premium And Referal Settings
-PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', False)) # Set Ture Or False
+PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True)) # Set Ture Or False
 
 # If PREMIUM_AND_REFERAL_MODE is True Then Fill Below Variable, If Flase Then No Need To Fill.
 REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '20')) # number of referal count
@@ -67,9 +67,9 @@ OWNER_USERNAME = environ.get('OWNER_USERNAME', 'Arya_bro') # owner username with
 # Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+r29zcNRWS-QzMjZl')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/vs_Files_Mx_player')
-TUTORIAL = environ.get('TUTORIAL', '')
-VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', '')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'PIFAdminBot') # Support Chat Link Without https:// or @
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/vs_Files_Mx_player/135')
+VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/vs_Files_Mx_player/135')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Arya_Bro_Bot') # Support Chat Link Without https:// or @
 
 # True Or False
 PM_SEARCH = bool(environ.get('PM_SEARCH', True)) # In Pm Search Currently Spell Check Doesn't Work.
