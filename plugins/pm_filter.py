@@ -1891,10 +1891,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = [[
                 InlineKeyboardButton('✌ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ✌', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
                 InlineKeyboardButton('🫧Database Channel🫧', url='https://t.me/+JYdSwn1TZHE2NjM1')
-            ],[
-                InlineKeyboardButton('💫 Hᴇʟᴘ', callback_data='help')
             ],[
                 InlineKeyboardButton('🎈 ɢᴇᴛ ғʀᴇᴇ/ᴘᴀɪᴅ sᴜʙsᴄʀɪᴘᴛɪᴏɴ 🎈', callback_data='subscription')
             ],[
@@ -1905,10 +1902,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = [[
                 InlineKeyboardButton('✌ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ✌', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
                 InlineKeyboardButton('🫧Database Channel🫧', url='https://t.me/+JYdSwn1TZHE2NjM1')
-            ],[
-                InlineKeyboardButton('💫 Hᴇʟᴘ', callback_data='help')
             ],[
                 InlineKeyboardButton('🎈 ɢᴇᴛ ғʀᴇᴇ/ᴘᴀɪᴅ sᴜʙsᴄʀɪᴘᴛɪᴏɴ 🎈', callback_data='subscription')
             ],[
